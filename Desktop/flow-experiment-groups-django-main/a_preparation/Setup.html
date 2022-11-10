@@ -1,0 +1,30 @@
+{{ extends 'global/Page.html' }}
+
+{{ block title }}
+    <div class="d-flex justify-content-center" style="margin-top: -50px">
+        <h2 style="margin-bottom:20px">SETUP</h2>
+    </div>
+{{ endblock }}
+
+{{ block content }}
+    <div class="jumbotron">
+        <p>Please make sure the following tasks are completed before starting the experiment:</p>
+        <ol>
+            <li>Check Internet Connection</li>
+            <li>Browser Fullscreen Mode</li>
+            <li>Sound On</li>
+        </ol>
+    </div>
+
+    <div class="jumbotron" style="padding-top: 5%">
+        <div>
+            <p>Please provide the following information:</p>
+            {% formfield player.booth %}
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button class="otree-btn-next btn btn-primary next-button otree-next-button">Next</button>
+    </div>
+
+{{ endblock }}

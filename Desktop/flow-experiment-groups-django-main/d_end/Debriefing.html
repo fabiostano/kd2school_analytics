@@ -1,0 +1,129 @@
+{% extends 'global/Page.html' %}
+
+{% block title %}
+
+    <div class="d-flex justify-content-center" style="margin-top: -50px">
+        <h2 style="margin-bottom:20px">QUESTIONNAIRE</h2>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+    <style>
+        #fss tr:nth-child(even) {background-color: #f9f9f9;}
+        #dcd tr:nth-child(even) {background-color: #f9f9f9;}
+        #aut tr:nth-child(even) {background-color: #f9f9f9;}
+        th {
+            text-align:center;
+            width: 5%;
+        }
+        input[type="radio"]{margin-left:-5.5px}
+
+        input[type="range"] {
+            -webkit-appearance: slider-vertical;
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+
+    <div class="jumbotron" style="padding-top: 5%">
+        <p>How much do you agree with these statements about <b>the tasks</b>?</p>
+        <table class="table" frame="void" style="width:100%; ">
+            <tr>
+                <th></th>
+                <th style="text-align:center"> Not At All </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Partly </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Very Much </th>
+            </tr>
+
+            {% for field in form %}
+                {% if forloop.counter > 0 and forloop.counter < 4 %}
+                <tr>
+                    <td align="left" style="width:40%">{{ field.label }}</td>
+
+                    {% for choice in field %}
+                        <td align="center" >{{ choice }}</td>
+                    {% endfor %}
+                </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="jumbotron" style="padding-top: 5%">
+        <p>Compared to all other activities, ...</p>
+        <table class="table" frame="void" style="width:100%; ">
+            <tr>
+                <th></th>
+                <th style="text-align:center"> Very low </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Very High </th>
+            </tr>
+
+            {% for field in form %}
+                {% if forloop.counter > 3 and forloop.counter < 7 %}
+                <tr>
+                    <td align="left" style="width:40%">{{ field.label }}</td>
+
+                    {% for choice in field %}
+                        <td align="center" >{{ choice }}</td>
+                    {% endfor %}
+                </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="jumbotron" style="padding-top: 5%">
+        <p>The overall difficulty of ...</p>
+        <table class="table" frame="void" style="width:100%; ">
+            <tr>
+                <th></th>
+                <th style="text-align:center"> Very low </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Very High </th>
+            </tr>
+
+            {% for field in form %}
+                {% if forloop.counter > 6 and forloop.counter < 10 %}
+                <tr>
+                    <td align="left" style="width:40%">{{ field.label }}</td>
+
+                    {% for choice in field %}
+                        <td align="center" >{{ choice }}</td>
+                    {% endfor %}
+                </tr>
+                {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="jumbotron">
+        <p>Is there anything else, that you would like to tell us about the experiment?</p>
+        {{ formfield 'feedback' }}
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button class="otree-btn-next btn btn-primary next-button otree-next-button">Next</button>
+    </div>
+
+<script>
+    // For better UX: Select radio button when clicking into a table cell
+    $('td').click(function() {
+        $(this).find('input:radio').prop('checked', true);
+    })
+</script>
+
+{% endblock %}

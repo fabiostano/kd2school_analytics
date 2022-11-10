@@ -1,0 +1,161 @@
+{% extends 'global/Page.html' %}
+
+{% block title %}
+    <div class="d-flex justify-content-center" style="margin-top: -50px">
+        <h2 style="margin-bottom:20px">Questionnaire</h2>
+    </div>
+    <div class="jumbotron" style="padding-top: 2%; padding-bottom: 2%; font-size: 21px; font-weight: 200">
+        Please answer the following questions.
+        There are no right or wrong answers in this experiment.
+        We are only interested in <b>your personal opinion.</b>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <style>
+        #fss tr:nth-child(even) {background-color: #f9f9f9;}
+        #dcd tr:nth-child(even) {background-color: #f9f9f9;}
+        #aut tr:nth-child(even) {background-color: #f9f9f9;}
+        th {
+            text-align:center;
+            width: 5%;
+        }
+        input[type="radio"]{margin-left:-5.5px}
+
+        input[type="range"] {
+            -webkit-appearance: slider-horizontal;
+            max-width: 85%;
+            display: inline;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    </style>
+
+    <div id="fss" class="jumbotron" style="padding-top: 5%">
+        <p>How much do you agree with the following statements?</p>
+        <table class="table mytable" frame="void" style="width:100%; ">
+            <tr>
+                <th></th>
+                <th style="text-align:center"> Not At All </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Partly </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Very Much </th>
+            </tr>
+
+            {% for field in form %}
+            {% if  forloop.counter < 11 %}
+                <tr>
+                    <td align="left" style="width:40%">{{ field.label }}</td>
+
+                    {% for choice in field %}
+                        <td align="center" >{{ choice }}</td>
+                    {% endfor %}
+                </tr>
+            {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+
+    <div class="jumbotron" style="padding-top: 5%">
+        <table class="table mytable" frame="void" style="width:100%; ">
+            <tr>
+                <th></th>
+                <th style="text-align:center"> No Flow </th>
+                <th style="text-align:center"> Very Low </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+                <th style="text-align:center"> Very High </th>
+            </tr>
+
+            {% for field in form %}
+            {% if  forloop.counter > 10 and forloop.counter < 12 %}
+                <tr>
+                    <td align="left" style="width:33%">{{ field.label }}</td>
+
+                    {% for choice in field %}
+                        <td align="center" >{{ choice }}</td>
+                    {% endfor %}
+                </tr>
+            {% endif %}
+            {% endfor %}
+        </table>
+    </div>
+
+    <div id="tlx" class="jumbotron" style="padding-top: 5%">
+        <!--
+        <p>Please indicate on each scale at the point that best indicates your experience of the last few minutes.</p>
+        -->
+        <div>
+            <h4>MENTAL DEMAND</h4>
+            <span>How much mental and perceptual activity was required (e.g. thinking, deciding, calculating, remembering, looking, searching, etc)? Was the task easy or demanding, simple or complex, exacting or forgiving?</span>
+            <div style="margin: 15px 0 30px 0">
+                <span>Low</span>
+                    <input name="tlx_mental" class="input-range" type="range" step="1" value="11" min="0" max="21" style="display: inline">
+                <span>High</span>
+            </div>
+
+            <h4>TEMPORAL DEMAND</h4>
+            <span>How much time pressure did you feel due to the rate of pace at which the tasks or or task elements occurred? Was the pace slow and leisurely or rapid and frantic?</span>
+            <div style="margin: 15px 0 30px 0">
+                <span>Low</span>
+                    <input name="tlx_temporal" class="input-range" type="range" step="1" value="11" min="0" max="21" style="display: inline">
+                <span>High</span>
+            </div>
+
+            <h4>PERFORMANCE</h4>
+            <span>How successful do you think you were in accomplishing the goals of the task set by the experimenter (or yourself)? How satisfied were you with your performance in accomplishing these goals?</span>
+            <div style="margin: 15px 0 30px 0">
+                <span>Poor</span>
+                    <input name="tlx_performance" class="input-range" type="range" step="1" value="11" min="0" max="21" style="display: inline">
+                <span>Good</span>
+            </div>
+
+            <h4>EFFORT</h4>
+            <span>How hard did you have to work (mentally and physically) to accomplish your level of performance?</span>
+            <div style="margin: 15px 0 30px 0">
+                <span>Low</span>
+                    <input name="tlx_effort" class="input-range" type="range" step="1" value="11" min="0" max="21" style="display: inline">
+                <span>High</span>
+            </div>
+
+            <h4>FRUSTRATION</h4>
+            <span>How insecure, discouraged, irritated, stressed and annoyed versus secure, gratified, content, relaxed and complacent did you feel during the task?</span>
+            <div style="margin: 15px 0 30px 0">
+                <span>Low</span>
+                    <input name="tlx_frustration" class="input-range" type="range" step="1" value="11" min="0" max="21" style="display: inline">
+                <span>High</span>
+            </div>
+
+            <h4>PHYSICAL DEMAND</h4>
+            <span>How much physical activity was required (e.g. pushing, pulling, turning, controlling, activating, etc)? Was the task easy or demanding, slow or brisk, slack or strenuous, restful or laborious?</span>
+            <div style="margin: 15px 0 30px 0">
+                <span>Low</span>
+                    <input name="tlx_physical" class="input-range" type="range" step="1" value="11" min="0" max="21" style="display: inline">
+                <span>High</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="next-page" class="d-flex justify-content-center" style="display:none">
+        {% next_button %}
+    </div>
+
+    <script>
+        // Reset the selections
+        $('input[class=form-check-input]').attr('checked',false);
+
+        // For better UX: Select radio button when clicking into a table cell
+        $('td').click(function() {
+            $(this).find('input:radio').prop('checked', true);
+        })
+    </script>
+
+{% endblock %}

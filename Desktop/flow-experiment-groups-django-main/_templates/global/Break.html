@@ -1,0 +1,43 @@
+{% extends 'global/Page.html' %}
+
+{% block title %}
+    <div class="d-flex justify-content-center" style="margin-top: -50px">
+        <h2 style="margin-bottom:20px">BREAK</h2>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <style>
+        .otree-timer {
+            display: none;
+        }
+    </style>
+
+
+    <div id="tlx" class="jumbotron" style="padding-top: 5%">
+        <p>Ok, ready?</p>
+        <p id="timerText">{{ taskType }} ({{ currTask }}/{{ maxTask }}) will continue in {{ breakTime }} seconds. </p>
+    </div>
+
+    <button style="display:none" class="btn-primary btn-lg" id="nextbtn">Next</button>
+
+{% endblock %}
+
+{% block scripts %}
+
+    <script>
+        var breakTime = {{ breakTime }};
+
+        setInterval(timer, 1000);
+
+        function timer() {
+            if (breakTime === 0 ) {
+                document.getElementById("nextbtn").click();
+            } else {
+                breakTime = breakTime - 1;
+                document.getElementById("timerText").innerHTML = "{{ taskType }} ({{ currTask }}/{{ maxTask }}) will continue in " + breakTime.toString() + " seconds."
+            }
+        }
+    </script>
+
+{% endblock %}
