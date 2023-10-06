@@ -1,0 +1,48 @@
+name,last_name,group,university,team,gender,status,publications,features
+Michael Beigl,Beigl,PI,KIT,Beigl,M,Active,0,4
+Ulrich Ebner-Priemer,Ebner-Priemer,PI,KIT,Ebner-Priemer,M,Active,0,1
+Manfred Herrmann,Herrmann,PI,UoB,Herrmann,M,Active,0,0
+Martin Klarmann,Klarmann,PI,KIT,Klarmann,M,Active,0,5
+Alexander Maedche,Maedche,PI,KIT,Maedche,M,Active,0,21
+Petra Nieken,Nieken,PI,KIT,Nieken,F,Active,1,5
+Jella Pfeiffer,Pfeiffer,PI,JLU,Pfeiffer,F,Active,0,2
+Clemens Puppe,Puppe,PI,KIT,Puppe,M,Active,0,0
+Benjamin Scheibehenne,Scheibehenne,PI,KIT,Scheibehenne,M,Active,0,0
+Nora Szech,Szech,PI,KIT,Szech,F,Active,0,1
+Tanja Schultz,Schultz,PI,UoB,Schultz,F,Active,0,3
+Christof Weinhardt,Weinhardt,PI,KIT,Weinhardt,M,Active,0,10
+Ivo Benke,Benke,PostDoc,KIT,Weinhardt,M,Active,4,12
+Jana Schill,Schill,PostDoc,UoB,UoB,F,Active,0,0
+Tim Schneegans,Schneegans,Kollegiat:in,KIT,Beigl,M,Active,2,3
+Lisa-Marie Wadle,Marie Wadle,Kollegiat:in,KIT,Ebner-Priemer,F,Active,0,0
+Saskia Jacob,Jacob,Kollegiat:in,KIT,Klarmann,F,Active,0,1
+Julia Seitz,Seitz,Kollegiat:in,KIT,Maedche,F,Active,4,6
+Nicola Hueholt,Hueholt,Kollegiat:in,KIT,Szech,F,Active,0,0
+Karen Bartholomeyczik,Bartholomeyczik,Kollegiat:in,KIT,Weinhardt,F,Active,4,6
+Tom Reuscher,Reuscher,Kollegiat:in,KIT,Nieken,M,Active,1,4
+Tobias Weiss,Weiss,Kollegiat:in,JLU,Pfeiffer,M,Active,0,0
+Gabriel Ivucic,Ivucic,Kollegiat:in,UoB,Schultz,M,Active,2,4
+Thai Cao,Cao,Kollegiat:in,KIT,Scheibehenne,M,Active,0,0
+Negin Javaheri,Javaheri,Kollegiat:in,UoB, Herrmann,F,Active,0,0
+Jessica Jachimowicz,Jachimowicz,Kollegiat:in,KIT,Puppe,F,Active,0,0
+Tobias Roeddiger,Roeddiger,Associate,KIT,Beigl,M,Active,2,2
+Niels Doehring,Doehring,Associate,UoB,Herrmann,M,Active,0,0
+Revati Mulay,Mulay,Associate,UoB,Herrmann,F,Active,0,0
+Anne Cordts,Cordts,Associate,KIT,Klarmann,F,Active,3,3
+Moritz Langner,Langner,Associate,KIT,Maedche,M,Active,2,6
+Karoline Stroehlein,Stroehlein,Associate,KIT,Nieken,F,Active,0,0
+Sven Walther,Walther,Associate,KIT,Nieken,M,Active,0,0
+Pascal Hessler,Hessler,Associate,JLU,Pfeiffer,M,Active,2,1
+David Huber,Huber,Associate,KIT,Szech,M,Active,1,1
+Anke Greif-Winzrieth,Greif-Winzrieth,Associate,KIT,Weinhardt,F,Active,3,3
+Lorenzo del Puppo,del Puppo,Associate,KIT,Weinhardt,M,Active,0,0
+Christoph Berger,Berger,Associate,KIT,Weinhardt,M,Active,1,1
+Hannah Seidler,Seidler,Associate,KIT,Scheibehenne,F,Active,0,0
+Asmus Eike Eilks,Eike Eilks,Associate,UoB,Schultz,M,Active,0,0
+Thorsten Fehr,Fehr,Associate (PostDoc),UoB,Herrmann,M,Active,0,0
+Peyman Toreini,Toreini,Associate (PostDoc),KIT,Maedche,M,Active,4,11
+Michael Knierim,Knierim,Associate (PostDoc),KIT,Weinhardt,M,Active,3,8
+Felix Putze,Putze,Associate (PostDoc),UoB,Schultz,F,Active,0,1
+Rafael Reisenhofer,Reisenhofer,PostDoc,UoB,UoB,M,Out,0,0
+Nevena Nikolajevic,Nikolajevic,Associate,KIT,Weinhardt,F,Out,1,1
+Jana Rollmann,Rollmann,Associate (PostDoc),KIT,Puppe,F,Out,0,0

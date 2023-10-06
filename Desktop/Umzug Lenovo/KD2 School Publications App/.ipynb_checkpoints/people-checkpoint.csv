@@ -1,0 +1,48 @@
+﻿name;group;university;team;gender;status
+Michael Beigl;PI;KIT;Beigl;M;Active
+Ulrich Ebner-Priemer;PI;KIT;Ebner-Priemer;M;Active
+Manfred Herrmann;PI;UoB;Herrmann;M;Active
+Martin Klarmann;PI;KIT;Klarmann;M;Active
+Alexander Mädche;PI;KIT;Mädche;M;Active
+Petra Nieken;PI;KIT;Nieken;F;Active
+Jella Pfeiffer;PI;JLU;Pfeiffer;F;Active
+Clemens Puppe;PI;KIT;Puppe;M;Active
+Benjamin Scheibehenne;PI;KIT;Scheibehenne;M;Active
+Nora Szech;PI;KIT;Szech;F;Active
+Tanja Schultz;PI;UoB;Schultz;F;Active
+Christof Weinhardt;PI;KIT;Weinhardt;M;Active
+Ivo Benke;PostDoc;KIT;KIT;M;Active
+Jana Schill;PostDoc;UoB;UoB;F;Active
+Tim Schneegans;Kollegiat:in;KIT;Beigl;M;Active
+Lisa-Marie Wadle;Kollegiat:in;KIT;Ebner-Priemer;F;Active
+Saskia Jacob;Kollegiat:in;KIT;Klarmann;F;Active
+Julia Seitz;Kollegiat:in;KIT;Mädche;F;Active
+Nicola Hüholt;Kollegiat:in;KIT;Szech;F;Active
+Karen Bartholomeyczik;Kollegiat:in;KIT;Weinhardt;F;Active
+Tom Reuscher;Kollegiat:in;KIT;Nieken;M;Active
+Tobias Weiss;Kollegiat:in;JLU;Pfeiffer;M;Active
+Gabriel Ivucic;Kollegiat:in;UoB;Schultz;M;Active
+Thai Cao;Kollegiat:in;KIT;Scheibehenne;M;Active
+Negin Javaheri;Kollegiat:in;UoB; Herrmann;F;Active
+Jessica Jachimowicz;Kollegiat:in;KIT;Puppe;F;Active
+Tobias Röddiger;Associate;KIT;Beigl;M;Active
+Niels Döhring;Associate;UoB;Herrmann;M;Active
+Revati Mulay;Associate;UoB;Herrmann;F;Active
+Anne Cordts;Associate;KIT;Klarmann;F;Active
+Moritz Langner;Associate;KIT;Mädche;M;Active
+Karoline Ströhlein;Associate;KIT;Nieken;F;Active
+Sven Walther;Associate;KIT;Nieken;M;Active
+Pascal Hessler;Associate;JLU;Pfeiffer;M;Active
+David Huber;Associate;KIT; Szech;M;Active
+Anke Greif-Winzrieth;Associate;KIT;Weinhardt;F;Active
+Lorenzo del Puppo;Associate;KIT;Weinhardt;M;Active
+Christoph Berger;Associate;KIT;Weinhardt;M;Active
+Hannah Seidler;Associate;KIT;Scheibehenne;F;Active
+Asmus Eike Eilks;Associate;UoB;Schultz;M;Active
+Thorsten Fehr;Associate (PostDoc);UoB;Herrmann;M;Active
+Peyman Toreini;Associate (PostDoc);KIT;Mädche;M;Active
+Michael Knierim;Associate (PostDoc);KIT;Weinhardt;M;Active
+Felix Putze;Associate (PostDoc);UoB;Schultz;F;Active
+Rafael Reisenhofer;PostDoc;UoB;UoB;M;Out
+Nevena Nikolajevic;Associate;KIT;Weinhardt;F;Out
+Jana Rollmann;Associate (PostDoc);KIT;Puppe;F;Out
